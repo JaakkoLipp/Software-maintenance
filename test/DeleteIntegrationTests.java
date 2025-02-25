@@ -26,7 +26,7 @@ void testDeleteProductThroughMainMenu () {
         4
         101
         2
-        12
+        0
         """;
     ByteArrayInputStream testInput = new ByteArrayInputStream(simulatedInput.getBytes());
     System.setIn(testInput);

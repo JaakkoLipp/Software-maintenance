@@ -29,7 +29,7 @@ class AddInventoryIntegrationTest {
         Laptop
         5
         1200
-        12
+        0
         """;
 
         // Ensure the input buffer is filled before Main.main() starts
@@ -46,6 +46,5 @@ class AddInventoryIntegrationTest {
         // Check output contains success message
         String output = outputStream.toString();
         assertTrue(output.contains("Product added successfully."), "Product addition should be confirmed.");
-
     }
 }

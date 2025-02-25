@@ -2,13 +2,12 @@ import java.util.Scanner;
 
 public class AddProduct {
     private final InventoryManager inventoryManager;
-
-    public AddProduct(InventoryManager inventoryManager) {
+    private Scanner scanner;
+    public AddProduct(InventoryManager inventoryManager, Scanner scanner) {
         this.inventoryManager = inventoryManager;
+        this.scanner = scanner;
     }
-
     public void execute() {
-        Scanner scanner = Main.scanner;
         System.out.print("Enter Product ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();

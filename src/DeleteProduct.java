@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class DeleteProduct {
     private final InventoryManager inventoryManager;
-
-    public DeleteProduct(InventoryManager inventoryManager) {
+    private Scanner scanner;
+    public DeleteProduct(InventoryManager inventoryManager, Scanner scanner) {
         this.inventoryManager = inventoryManager;
+        this.scanner = scanner;
     }
 
     public void execute() {
-        Scanner scanner = Main.scanner;
         System.out.print("Enter Product ID to Delete: ");
         int id = scanner.nextInt();
         inventoryManager.removeProduct(id);
