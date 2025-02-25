@@ -8,7 +8,7 @@ public class AddProduct {
     }
 
     public void execute() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = Main.scanner;
         System.out.print("Enter Product ID: ");
         int id = scanner.nextInt();
         scanner.nextLine();

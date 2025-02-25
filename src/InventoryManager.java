@@ -50,4 +50,12 @@ public class InventoryManager {
     public void clearInventory() {
         inventory.clear();
     }
+
+    // new feature
+    public void checkLowStock(Product product) {
+        if (product.getQuantity() < 5) {
+            System.out.println("Warning: Low stock for " + product.getName() + " (" + product.getQuantity() + " left)");
+        }
+    }
+
 }

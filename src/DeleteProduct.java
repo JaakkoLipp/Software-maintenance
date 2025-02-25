@@ -8,7 +8,7 @@ public class DeleteProduct {
     }
 
     public void execute() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = Main.scanner;
         System.out.print("Enter Product ID to Delete: ");
         int id = scanner.nextInt();
         inventoryManager.removeProduct(id);

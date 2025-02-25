@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         InventoryManager inventoryManager = new InventoryManager();
         inventoryManager.loadInventory();
 
-        Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("\nInventory Management System");
             System.out.println("1. Add Product");
